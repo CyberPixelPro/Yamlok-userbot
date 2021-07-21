@@ -1,0 +1,153 @@
+{
+  "name": "YaMloK",
+  "description": "THE ULTRA ADVANCED USERBOT MADE MY AT World's END, VISIT  @YAMLOKOFFICIAL FOR ANY SUPPORT ",
+  "logo": "https://telegra.ph/file/bf8271a7d712004202ba7.jpg",
+    "keywords": [
+    "telegram",
+    "YAMLOK", 
+    "telthon bot", 
+    "userbot",
+    "plugin",
+    "modular",
+    "productivity"
+  ],
+  "repository": "https://github.com/AT-WORLDS-END/Yamlok-userbot/",
+  "website": "https://github.com/AT-WORLDS-END/Yamlok-userbot/",
+  "success_url": "https://t.me/YAMLOKOFFICIAL",
+  "env": {
+    "ENV": {
+      "description": "Setting this to ANYTHING will enable heroku.",
+      "value": "ANYTHING"
+    },
+    "TEMP_DOWNLOAD_DIRECTORY": {
+      "description": "Where downloaded files will go.",
+      "value": "./userbot/DOWNLOADS/",
+      "required": false
+    },
+    "F_BAN_LOGGER_GROUP": {
+      "description": "Put Group id Same As PRIVATE_GROUP_ID.",
+      "value": "",
+      "required": false
+    },
+    "ALIVE_NAME": {
+      "description": "Fill your Full name or Username like @yamlokofficial.",
+      "value": "",
+      "required": false
+    },
+    "ALIVE_PHOTTO": {
+      "description": "put here any telegraph media link use .awake to show.",
+      "value": "",
+      "required": false
+    },
+    "PMPERMIT_PIC": {
+      "description": "put here any telegraph media link for pmpermit custom pic.",
+      "value": "",
+      "required": true
+    },
+    "CUSTOM_PMPERMIT": {
+      "description": "Your custom pm permit msg.",
+      "value": "",
+      "required": false
+    },
+    "PM_PERMIT_GROUP_ID": {
+      "description": "Put an Group Id Same As PRIVATE_GROUP_ID Required For Pmpermit plugin.",
+      "value": "",
+      "required": false
+    },
+    "APP_ID": {
+      "description": "Get this value from my.telegram.org! Putting Others Value may result In Account Ban.",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from my.telegram.org! Putting Others Value May result In Account Ban.",
+      "value": ""
+    },
+    "PLUGIN_CHANNEL": {
+      "description": "skip or Create a private group add @missrose_bot  then type /id. PLUGIN_CHANNEL and PRIVATE_GROUP_ID both values should be same",
+      "value": "9999"
+    },
+    "PRIVATE_GROUP_BOT_API_ID": {
+      "description": "skip or create a private channel and then type .get_id add that value here for save messages",
+      "value": "99999"
+    },
+    "PRIVATE_GROUP_ID": {
+      "description": "skip or Create a private group add @missrose_bot  then type /id. PLUGIN_CHANNEL and PRIVATE_GROUP_ID both values should be same",
+      "value": "999999"
+    },
+    "PM_LOGGR_BOT_API_ID": {
+       "description": "skip or for login private messages create a private channel and do .get_id and add that id", 
+       "value": "99999"
+    }, 
+    "STRING_SESSION": {
+      "description": ".......... ",
+      "value": ""
+    },
+    "HEROKU_API_KEY": {
+      "description": "Go to https://dashboard.heroku.com/account, scroll down and press Reveal API.Required for updater to work.",
+      "value": "",
+      "required": false
+    },
+    "EXTRA_PLUGS": {
+      "description": "If you want extra plugins then Type True in this var else False.",
+      "value": "",
+      "required": false
+    },
+    "TG_BOT_TOKEN_BF_HER": {
+      "description": "Needed for inline buttons maker. Make a bot at [BotFather](http://telegram.dog/BotFather) and get the token of your bot. And Don't Forget To Turn on inline Mode on bot settings. Get it.",
+      "value": ""
+    },
+    "TG_BOT_USER_NAME_BF_HER": {
+      "description": "Needed for inline buttons maker. Make a bot at [BotFather](http://telegram.dog/BotFather) and get the username of your bot without @",
+      "value": ""
+    },
+    "ONLINE_ALERT": {
+      "description": "Set it True for being informed by the Assistant Bot that Yamlok is now working. Preferred and By-Default is True",
+      "value": "True",
+      "required": true
+    },
+    "NO_OF_BUTTONS_DISPLAYED_IN_H_ME_CMD": {
+      "description": "Set The Amount Of Buttons Displayed In Help Command",
+      "value": "10",
+      "required": true
+    },
+    "NO_OF_COLUMS_DISPLAYED_IN_H_ME_CMD": {
+      "description": "Set The Amount Of Rows You Want To Displayed In Help Command default 2",
+      "value": "2",
+      "required": true
+    },
+    "TZ": {
+      "description": "Required for Correct Time for autopic get from http://www.timezoneconverter.com/cgi-bin/findzone.tzc",
+      "value": "Asia/Kolkata",
+      "required": false
+    },
+    "PM_DATA": {
+      "description": "Type DISABLE if you want to disable pm protection... ",
+      "value": "ENABLE",
+      "required": false 
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  },{
+    "url":"https://github.com/amivin/aria2-heroku.git"
+  },{
+    "url":"https://github.com/heroku/heroku-buildpack-google-chrome"
+  },{
+     "url": "https://github.com/heroku/heroku-buildpack-apt.git"
+  },{
+    "url":"https://github.com/heroku/heroku-buildpack-chromedriver"
+  },{
+    "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
+  },{
+    "url": "heroku/python"
+  }]
+}
